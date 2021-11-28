@@ -136,6 +136,8 @@ a {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
@@ -151,6 +153,8 @@ a {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding-right: 237px;
+  padding-left: 237px;
 }
 
 .hero-button {
@@ -209,7 +213,8 @@ a {
   background-color: #f5f4fa;
   text-align: center;
 }
-.section .section-title {
+
+.section-title {
   color: var(--primery-text-color);
   font-family: Roboto;
   font-size: 36px;
@@ -240,9 +245,19 @@ a {
   display: flex;
   margin-top: 50px;
 }
-
+.section-team .section-title {
+  padding-top: 94px;
+}
 .text-team {
   color: var(--primery-text-color);
+  padding: 30px;
+}
+.team-items {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 94px;
+  background-color: var(--white-color);
 }
 
 .team-items p {
@@ -252,7 +267,6 @@ a {
   font-style: normal;
   line-height: 1.2;
   margin-top: 10px;
-  margin-bottom: 94px;
 }
 
 .team-items h3 {
@@ -261,15 +275,20 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  margin-top: 30px;
 }
 
 .team-items:not(:last-child) {
   margin-right: 30px;
 }
+
+.title-team {
+  margin-bottom: 10px;
+}
 /* Footer */
 .footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-finish {
   color: var(--white-color);
@@ -280,6 +299,10 @@ a {
   line-height: 1.19;
 }
 
+.footer-logo {
+  margin-bottom: 20px;
+}
+
 .address {
   color: var(--white-color);
   font-family: Roboto;
@@ -287,7 +310,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-
+  margin-bottom: 9px;
   letter-spacing: 0.03em;
 }
 .link-finish {
@@ -300,7 +323,9 @@ a {
   letter-spacing: 0.03em;
   text-align: left;
 }
-
+.info-finish li {
+  margin-bottom: 9px;
+}
 .footer .link-finish:hover,
 .footer .link-finish:focus {
   color: var(--accent-color);
