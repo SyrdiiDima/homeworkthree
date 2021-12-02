@@ -10,10 +10,12 @@
   --footer-color: #2f303a;
   --bcg-active-button: #f5f4fa;
 }
-
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin: 0;
@@ -29,10 +31,11 @@ body {
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.section-header {
+  border-bottom: 1px solid #ececec;
 }
+
 .logo {
   text-decoration: none;
   font-family: Raleway;
@@ -72,11 +75,9 @@ a {
 }
 
 /* ---header--- */
-.page-header {
+.header {
   display: flex;
   align-items: center;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-container {
@@ -133,31 +134,55 @@ a {
 
 /* HeroTitles */
 
-.container-hero {
+/* .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
   background-color: #2f303a;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--white-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
-.hero {
-  background-color: #2f303a;
-  color: var(--white-color);
+.h-hero {
+  padding-right: 237px;
+  padding-left: 237px;
+  margin-bottom: 30px;
 }
-.hero-title {
+
+.h-hero h1 {
   font-family: Roboto;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+
+  max-width: 650px;
+} */
+
+.hero {
+  background-color: #2f303a;
+  color: var(--white-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.h-hero {
   margin-bottom: 30px;
-  padding-right: 237px;
-  padding-left: 237px;
+  margin-left: 237px;
+  margin-right: 237px;
+  max-width: 650px;
+}
+.h-hero h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
@@ -170,11 +195,13 @@ a {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: #188ce8;
+  background-color: #188ce8;
+  border-radius: 4px;
 }
 
 /* Sections */
@@ -374,6 +401,7 @@ a {
   cursor: pointer;
   border: none;
   padding: 8px 22px;
+  border-radius: 4px;
 }
 .button-port:not(:last-child) {
   margin-right: 8px;
