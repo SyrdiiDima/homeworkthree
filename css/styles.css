@@ -94,6 +94,10 @@ a {
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
+.nav-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .site-nav a {
   color: var(--primary-text-color);
@@ -107,6 +111,7 @@ a {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* auth-nav */
@@ -115,6 +120,10 @@ a {
   display: flex;
 }
 
+.auth-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .auth-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -130,6 +139,7 @@ a {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* HeroTitles */
@@ -196,6 +206,7 @@ a {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
